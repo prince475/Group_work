@@ -26,13 +26,13 @@ num_checker(15, 3, 5)
 
 ### Ternary operator is a shorthand way or writing an if-else statement.
 
-### The ternary operator take three arguments:
+## The ternary operator take three arguments:
 
 - The first is a comparison argument
 - The second is the result upon a true comparison
 - The third is the result upon a false comparison
 
-### Our Ternary operators take the syntax {condition ? value_if_true : value_if_false}
+## Our Ternary operators take the syntax {condition ? value_if_true : value_if_false}
 
 <code>
 def num_checker (num, x, y)
@@ -40,3 +40,13 @@ def num_checker (num, x, y)
 end
 binding.pry
 </code>
+
+## Another way of tackling this problem
+
+<code>
+def sol(num, x, y)
+    !!(num%x == 0 && num%y == 0 && num%y == 0)
+end
+</code>
+
+The end
